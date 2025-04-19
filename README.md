@@ -2,7 +2,7 @@
 
 A powerful desktop application that helps you improve your resume using AI-powered analysis. Upload your resume, specify the job role you're applying for, and get personalized suggestions to enhance your resume and prepare for interviews.
 
-![Resume Improver Screenshot](public/screenshot.png)
+![Resume Improver Screenshot](public/APP_INTERFACE_SS.png)
 
 ## 🚀 Features
 
