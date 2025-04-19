@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Improver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Improve Your Resume</h1>
+
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="resumeFile">Upload Your Current Resume (PDF or DOCX):</label>
+                <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Applying Role:</label>
+                <input type="text" id="role" name="role" placeholder="e.g., Software Engineer, Marketing Manager" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Summarize Your Work Experience:</label>
+                <textarea id="experience" name="experience" rows="5" placeholder="e.g., 5 years experience developing web applications using React and Node.js..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">List Your Key Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Python, AWS, Communication, Teamwork">
+            </div>
+
+            <button type="submit" id="submitBtn">Analyze Resume</button>
+        </form>
+
+        <div id="loading" class="hidden">Analyzing your resume...</div>
+
+        <div id="results" class="hidden">
+            <h2>Analysis Results</h2>
+
+            <div id="score">
+                </div>
+
+            <div id="suggestions">
+                <h3>Resume Improvement Suggestions:</h3>
+                <ul>
+                    </ul>
+            </div>
+
+            <div id="interviewTips">
+                <h3>Interview Preparation Tips:</h3>
+                <ul>
+                    </ul>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="hidden error">
+            </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
